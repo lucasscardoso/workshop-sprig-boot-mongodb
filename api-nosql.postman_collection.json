@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "a378fc9d-6fa8-4cf0-99b9-45cd17763c35",
+		"name": "api-nosql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30637716"
+	},
+	"item": [
+		{
+			"name": "get all Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "get User by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/users/6808d29c08562c0d03b8279d"
+			},
+			"response": []
+		},
+		{
+			"name": "post User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bob Grey\",\r\n    \"email\": \"bob@gmail.com\"\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "alter user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Maria Brown\",\r\n    \"email\": \"maria2@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/users/6810b6328085533ee0e730ce"
+			},
+			"response": []
+		},
+		{
+			"name": "delete user by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/users/680ae203bb20cf2b1b8788b6"
+			},
+			"response": []
+		},
+		{
+			"name": "get all user posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/users/68151e25afc91422e57a8336/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "get post by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/posts/68150b56daf373043c7b7017"
+			},
+			"response": []
+		},
+		{
+			"name": "get post fullSearch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/posts/68150b56daf373043c7b7017"
+			},
+			"response": []
+		},
+		{
+			"name": "get post contais name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/posts/titlesearch?text=Bom%20dia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"titlesearch"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "Bom%20dia"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

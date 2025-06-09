@@ -34,6 +34,15 @@ C:\data\db
 
 ---
 
+### 2.5 Postman
+- Acesse: [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
+- Realize o downlod do Postman(windows)
+- No Postman, você pode importar um arquivo de coleção ou um arquivo de ambiente. Geralmente, os arquivos exportados são JSON, que podem ser importados por meio do menu "Arquivo" > "Importar".
+
+
+---
+
+
 ### 3. Teste
 
 Abra o terminal (CMD ou Git Bash) e execute:
@@ -99,3 +108,118 @@ Os dados de postagens e comentários são instanciados automaticamente.
 MongoDB deve estar ativo e rodando localmente na porta padrão (27017).
 
 As APIs podem ser testadas via ferramentas como Postman ou Insomnia.
+
+
+---
+
+# 📱Social Network - CRUD with Spring Boot, MongoDB
+
+This project is a CRUD application developed with **Spring Boot**, representing a **social network**.
+
+It allows **creating, modifying and deleting users**, as well as **creating and consulting posts and comments**.
+
+There are features for **searching posts by comments, data and text**.
+
+---
+
+## 🚀 Technologies Used
+
+-Java 17 (JDK 17)
+-Maven 3.9.9
+- Spring Boot 3.4.4
+-MongoDB
+- MongoDB Compass (optional)
+
+---
+
+## 🧰 Installing MongoDB on Windows
+
+### 1. Download and Installation
+
+- Go to: [https://www.mongodb.com](https://www.mongodb.com)
+- Go to **Download > Community Server**
+- Select the **Complete** installation type
+- **Important:** during the installation, **uncheck the MongoDB Compass installation option**, if you follow the course.
+
+### 2. Environment Setup
+
+- Create the directory:
+C:\data\db
+- Add the following path to the system `PATH` (adjust for your version):
+```C:\Program Files\MongoDB\Server\3.6\bin```
+
+---
+
+### 2.5 Postman
+- Go to: [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
+- Download Postman (Windows)
+- In Postman, you can import a collection file or an environment file. Typically, exported files are JSON files, which can be imported via the "File" > "Import" menu.
+
+---
+
+
+### 3. Test
+
+Open the terminal (CMD or Git Bash) and run:
+
+```bash
+mondeus
+```
+
+---
+
+### 4. (Optional) Install MongoDB Compass
+
+Graphical tool to visualize data:
+https://www.mongodb.com/products/compass
+
+---
+
+⚙️ How to run the project
+Prerequisites
+JDK 17 installed
+
+Maven 3.9.9 installed
+
+MongoDB running locally
+
+Clone the repository
+
+```
+clone https://github.com/lucasscardoso/workshop-sprig-boot-mongodb.git
+```
+
+---
+
+🧪 Application Features
+Users
+Create user
+
+Update user
+
+Delete user
+
+Posts
+Create post (related to a user)
+
+Search posts by:
+
+Text
+
+Data
+
+Comments
+
+Comments
+View comments by post
+
+(CRUD logic may be innovative in the future)
+
+---
+
+📌 Notes
+Post and comment data is instantiated automatically.
+
+MongoDB must be active and running locally on the default port (27017).
+
+APIs can be tested using tools such as Postman or Insomnia.
