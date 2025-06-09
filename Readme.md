@@ -61,9 +61,9 @@ MongoDB rodando localmente
 
 Clonar o repositório
 
-```git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio```
-
+```
+git clone https://github.com/lucasscardoso/workshop-sprig-boot-mongodb.git
+```
 
 ---
 
